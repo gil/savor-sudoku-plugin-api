@@ -1,0 +1,27 @@
+{
+  "name": "savor-sudoku-plugin-api",
+  "version": "0.1.1",
+  "description": "Contract types and RPC halves for Savor Sudoku engine plugins",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "prepare": "tsdown"
+  },
+  "devDependencies": {
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.3"
+  }
+}
